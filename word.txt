@@ -1,0 +1,25 @@
+1.  To find out total combination we just multiply the number of faces on 
+    first dice with number of faces on another dice.
+     here each dice contains 6 faces and there are two dice. So each face combine
+      with 6 faces of other dice.
+       Mathematically, Dice A's 1 combines with Dice B,s 1,2,3,4,5,6.
+     Dice A's 2 combines with Dice B,s 1,2,3,4,5,6.
+     Similarly this combination form with 3,4,5,6 of dice A with dice B.
+     Total combination we get is (6*6) =36.
+
+2.  To display combination value we have to find the sum of each combination.
+   Mathematically, Dice A value=1 and Dice B value=1. So combination is   1+1=2.
+  Similarly we have to find all the combination values.For that we use to with a 
+   loop and find the combine value and then display it.    
+
+ 3.   to find probability of sum of each time here first I found 
+     the sum then it'sfrequency using Hashmap. And then simply using 
+      the probability formula on each value .
+      Important::  We can make thevalue upto a certain decimal point but in question it is not mentioned but
+       if you guys want to transform the decimal value upto a certain point like 2numbers or 3 numbers after decimal we can
+       achieve through decimal format or by using brute-force way. 
+      
+ 4. to find out the spots on dice without effecting the probability of the sum of each time,  
+   for that   we go with two steps first if spots are less than 4 we can assign
+   the values in newdieA else we check if value present or count already in the
+   map or if it'scount is smaller than 4 we put on dieA and check it's occurence .
